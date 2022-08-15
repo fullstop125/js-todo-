@@ -5,14 +5,14 @@ module.exports = {
 
   entry: './src/index.js',
   output: {
-    filename:'[name].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   mode: 'development',
   plugins: [
     new HtmlWebpackPlugin({
-     title: 'Output Management',
-     template: './src/index.html',
+      title: 'Output Management',
+      template: './src/index.html',
     }),
   ],
   devServer: {
